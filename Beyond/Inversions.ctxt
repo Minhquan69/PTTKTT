@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.target=Inversions
+comment0.text=\r\n\ \ The\ {@code\ Inversions}\ class\ provides\ static\ methods\ to\ count\ the\ \r\n\ \ number\ of\ <em>inversions</em>\ in\ either\ an\ array\ of\ integers\ or\ comparables.\r\n\ \ An\ inversion\ in\ an\ array\ {@code\ a[]}\ is\ a\ pair\ of\ indicies\ {@code\ i}\ and\r\n\ \ {@code\ j}\ such\ that\ {@code\ i\ <\ j}\ and\ {@code\ a[i]\ >\ a[j]}.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ a\ generalization\ of\ mergesort.\ The\ <em>count</em>\r\n\ \ operation\ takes\ time\ proportional\ to\ <em>n</em>\ log\ <em>n</em>,\r\n\ \ where\ <em>n</em>\ is\ the\ number\ of\ keys\ in\ the\ array.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/22mergesort">Section\ 2.2</a>\r\n\ \ of\ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=Inversions()
+comment10.params=a\ lo\ hi
+comment10.target=long\ brute(int[],\ int,\ int)
+comment11.params=args
+comment11.target=void\ main(java.lang.String[])
+comment11.text=\r\n\ Reads\ a\ sequence\ of\ integers\ from\ standard\ input\ and\r\n\ prints\ the\ number\ of\ inversions\ to\ standard\ output.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+comment2.params=a\ aux\ lo\ mid\ hi
+comment2.target=long\ merge(int[],\ int[],\ int,\ int,\ int)
+comment3.params=a\ b\ aux\ lo\ hi
+comment3.target=long\ count(int[],\ int[],\ int[],\ int,\ int)
+comment4.params=a
+comment4.target=long\ count(int[])
+comment4.text=\r\n\ Returns\ the\ number\ of\ inversions\ in\ the\ integer\ array.\r\n\ The\ argument\ array\ is\ not\ modified.\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ number\ of\ inversions\ in\ the\ array.\ An\ inversion\ is\ a\ pair\ of\ \r\n\ \ \ \ \ \ \ \ \ indicies\ {@code\ i}\ and\ {@code\ j}\ such\ that\ {@code\ i\ <\ j}\r\n\ \ \ \ \ \ \ \ \ and\ {@code\ a[i]\ >\ a[j]}.\r\n
+comment5.params=a\ aux\ lo\ mid\ hi
+comment5.target=long\ merge(java.lang.Comparable[],\ java.lang.Comparable[],\ int,\ int,\ int)
+comment6.params=a\ b\ aux\ lo\ hi
+comment6.target=long\ count(java.lang.Comparable[],\ java.lang.Comparable[],\ java.lang.Comparable[],\ int,\ int)
+comment7.params=a
+comment7.target=long\ count(java.lang.Comparable[])
+comment7.text=\r\n\ Returns\ the\ number\ of\ inversions\ in\ the\ comparable\ array.\r\n\ The\ argument\ array\ is\ not\ modified.\r\n\ @param\ \ a\ the\ array\r\n\ @param\ <Key>\ the\ inferred\ type\ of\ the\ elements\ in\ the\ array\r\n\ @return\ the\ number\ of\ inversions\ in\ the\ array.\ An\ inversion\ is\ a\ pair\ of\ \r\n\ \ \ \ \ \ \ \ \ indicies\ {@code\ i}\ and\ {@code\ j}\ such\ that\ {@code\ i\ <\ j}\r\n\ \ \ \ \ \ \ \ \ and\ {@code\ a[i].compareTo(a[j])\ >\ 0}.\r\n
+comment8.params=v\ w
+comment8.target=boolean\ less(java.lang.Comparable,\ java.lang.Comparable)
+comment9.params=a\ lo\ hi
+comment9.target=long\ brute(java.lang.Comparable[],\ int,\ int)
+numComments=12

@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Shell
+comment0.text=\r\n\ \ The\ {@code\ Shell}\ class\ provides\ static\ methods\ for\ sorting\ an\r\n\ \ array\ using\ Shellsort\ with\ Knuth's\ increment\ sequence\ (1,\ 4,\ 13,\ 40,\ ...).\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/21elementary">Section\ 2.1</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\ \ \r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=Shell()
+comment2.params=a
+comment2.target=void\ sort(java.lang.Comparable[])
+comment2.text=\r\n\ Rearranges\ the\ array\ in\ ascending\ order,\ using\ the\ natural\ order.\r\n\ @param\ a\ the\ array\ to\ be\ sorted\r\n
+comment3.params=v\ w
+comment3.target=boolean\ less(java.lang.Comparable,\ java.lang.Comparable)
+comment3.text=\r\n\ \ Helper\ sorting\ functions.\r\n
+comment4.params=a\ i\ j
+comment4.target=void\ exch(java.lang.Object[],\ int,\ int)
+comment5.params=a
+comment5.target=boolean\ isSorted(java.lang.Comparable[])
+comment5.text=\r\n\ \ Check\ if\ array\ is\ sorted\ -\ useful\ for\ debugging.\r\n
+comment6.params=a\ h
+comment6.target=boolean\ isHsorted(java.lang.Comparable[],\ int)
+comment7.params=a
+comment7.target=void\ show(java.lang.Comparable[])
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+comment8.text=\r\n\ Reads\ in\ a\ sequence\ of\ strings\ from\ standard\ input;\ Shellsorts\ them;\ \r\n\ and\ prints\ them\ to\ standard\ output\ in\ ascending\ order.\ \r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=9

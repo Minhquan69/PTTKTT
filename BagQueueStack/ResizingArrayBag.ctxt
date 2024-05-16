@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=ResizingArrayBag
+comment0.text=\r\n\ \ The\ {@code\ ResizingArrayBag}\ class\ represents\ a\ bag\ (or\ multiset)\ of\ \r\n\ \ generic\ items.\ It\ supports\ insertion\ and\ iterating\ over\ the\ \r\n\ \ items\ in\ arbitrary\ order.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ a\ resizing\ array.\r\n\ \ See\ {@link\ LinkedBag}\ for\ a\ version\ that\ uses\ a\ singly\ linked\ list.\r\n\ \ The\ <em>add</em>\ operation\ takes\ constant\ amortized\ time;\ the\r\n\ \ <em>isEmpty</em>,\ and\ <em>size</em>\ operations\r\n\ \ take\ constant\ time.\ Iteration\ takes\ time\ proportional\ to\ the\ number\ of\ items.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/13stacks">Section\ 1.3</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=ResizingArrayBag()
+comment1.text=\r\n\ Initializes\ an\ empty\ bag.\r\n
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment2.text=\r\n\ Is\ this\ bag\ empty?\r\n\ @return\ true\ if\ this\ bag\ is\ empty;\ false\ otherwise\r\n
+comment3.params=
+comment3.target=int\ size()
+comment3.text=\r\n\ Returns\ the\ number\ of\ items\ in\ this\ bag.\r\n\ @return\ the\ number\ of\ items\ in\ this\ bag\r\n
+comment4.params=capacity
+comment4.target=void\ resize(int)
+comment5.params=item
+comment5.target=void\ add(java.lang.Object)
+comment5.text=\r\n\ Adds\ the\ item\ to\ this\ bag.\r\n\ @param\ item\ the\ item\ to\ add\ to\ this\ bag\r\n
+comment6.params=
+comment6.target=java.util.Iterator\ iterator()
+comment6.text=\r\n\ Returns\ an\ iterator\ that\ iterates\ over\ the\ items\ in\ the\ bag\ in\ arbitrary\ order.\r\n\ @return\ an\ iterator\ that\ iterates\ over\ the\ items\ in\ the\ bag\ in\ arbitrary\ order\r\n
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=\r\n\ Unit\ tests\ the\ {@code\ ResizingArrayBag}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=8

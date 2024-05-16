@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Quick3way
+comment0.text=\r\n\ \ The\ {@code\ Quick3way}\ class\ provides\ static\ methods\ for\ sorting\ an\r\n\ \ array\ using\ quicksort\ with\ 3-way\ partitioning.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/21elementary">Section\ 2.1</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=Quick3way()
+comment2.params=a
+comment2.target=void\ sort(java.lang.Comparable[])
+comment2.text=\r\n\ Rearranges\ the\ array\ in\ ascending\ order,\ using\ the\ natural\ order.\r\n\ @param\ a\ the\ array\ to\ be\ sorted\r\n
+comment3.params=a\ lo\ hi
+comment3.target=void\ sort(java.lang.Comparable[],\ int,\ int)
+comment4.params=v\ w
+comment4.target=boolean\ less(java.lang.Comparable,\ java.lang.Comparable)
+comment4.text=\r\n\ \ Helper\ sorting\ functions.\r\n
+comment5.params=a\ i\ j
+comment5.target=void\ exch(java.lang.Object[],\ int,\ int)
+comment6.params=a
+comment6.target=boolean\ isSorted(java.lang.Comparable[])
+comment6.text=\r\n\ \ Check\ if\ array\ is\ sorted\ -\ useful\ for\ debugging.\r\n
+comment7.params=a\ lo\ hi
+comment7.target=boolean\ isSorted(java.lang.Comparable[],\ int,\ int)
+comment8.params=a
+comment8.target=void\ show(java.lang.Comparable[])
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+comment9.text=\r\n\ Reads\ in\ a\ sequence\ of\ strings\ from\ standard\ input;\ 3-way\r\n\ quicksorts\ them;\ and\ prints\ them\ to\ standard\ output\ in\ ascending\ order.\ \r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=10

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=ClosestPair
+comment0.text=\r\n\ \ The\ {@code\ ClosestPair}\ data\ type\ computes\ a\ closest\ pair\ of\ points\r\n\ \ in\ a\ set\ of\ <em>n</em>\ points\ in\ the\ plane\ and\ provides\ accessor\ methods\ \r\n\ \ for\ getting\ the\ closest\ pair\ of\ points\ and\ the\ distance\ between\ them.\r\n\ \ The\ distance\ between\ two\ points\ is\ their\ Euclidean\ distance.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ a\ divide-and-conquer\ algorithm.\ \r\n\ \ It\ runs\ in\ O(<em>n</em>\ log\ <em>n</em>)\ time\ in\ the\ worst\ case\ and\ uses\r\n\ \ O(<em>n</em>)\ extra\ space.\r\n\ \ <p>\r\n\ \ See\ also\ {@link\ FarthestPair}.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/99hull">Section\ 9.9</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=points
+comment1.target=ClosestPair(Point2D[])
+comment1.text=\r\n\ Computes\ the\ closest\ pair\ of\ points\ in\ the\ specified\ array\ of\ points.\r\n\r\n\ @param\ \ points\ the\ array\ of\ points\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ points}\ is\ {@code\ null}\ or\ if\ any\r\n\ \ \ \ \ \ \ \ \ entry\ in\ {@code\ points[]}\ is\ {@code\ null}\r\n
+comment2.params=pointsByX\ pointsByY\ aux\ lo\ hi
+comment2.target=double\ closest(Point2D[],\ Point2D[],\ Point2D[],\ int,\ int)
+comment3.params=
+comment3.target=Point2D\ either()
+comment3.text=\r\n\ Returns\ one\ of\ the\ points\ in\ the\ closest\ pair\ of\ points.\r\n\r\n\ @return\ one\ of\ the\ two\ points\ in\ the\ closest\ pair\ of\ points;\r\n\ \ \ \ \ \ \ \ \ {@code\ null}\ if\ no\ such\ point\ (because\ there\ are\ fewer\ than\ 2\ points)\r\n
+comment4.params=
+comment4.target=Point2D\ other()
+comment4.text=\r\n\ Returns\ the\ other\ point\ in\ the\ closest\ pair\ of\ points.\r\n\r\n\ @return\ the\ other\ point\ in\ the\ closest\ pair\ of\ points\r\n\ \ \ \ \ \ \ \ \ {@code\ null}\ if\ no\ such\ point\ (because\ there\ are\ fewer\ than\ 2\ points)\r\n
+comment5.params=
+comment5.target=double\ distance()
+comment5.text=\r\n\ Returns\ the\ Eucliden\ distance\ between\ the\ closest\ pair\ of\ points.\r\n\r\n\ @return\ the\ Euclidean\ distance\ between\ the\ closest\ pair\ of\ points\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.POSITIVE_INFINITY}\ if\ no\ such\ pair\ of\ points\r\n\ \ \ \ \ \ \ \ \ exist\ (because\ there\ are\ fewer\ than\ 2\ points)\r\n
+comment6.params=v\ w
+comment6.target=boolean\ less(java.lang.Comparable,\ java.lang.Comparable)
+comment7.params=a\ aux\ lo\ mid\ hi
+comment7.target=void\ merge(java.lang.Comparable[],\ java.lang.Comparable[],\ int,\ int,\ int)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+comment8.text=\r\n\ Unit\ tests\ the\ {@code\ ClosestPair}\ data\ type.\r\n\ Reads\ in\ an\ integer\ {@code\ n}\ and\ {@code\ n}\ points\ (specified\ by\r\n\ their\ <em>x</em>-\ and\ <em>y</em>-coordinates)\ from\ standard\ input;\r\n\ computes\ a\ closest\ pair\ of\ points;\ and\ prints\ the\ pair\ to\ standard\r\n\ output.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=9

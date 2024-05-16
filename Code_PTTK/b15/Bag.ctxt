@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Bag
+comment1.params=
+comment1.target=Bag()
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment3.params=
+comment3.target=int\ size()
+comment4.params=item
+comment4.target=void\ add(java.lang.Object)
+comment5.params=
+comment5.target=java.util.Iterator\ iterator()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

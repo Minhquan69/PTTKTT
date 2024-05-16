@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=DirectedEdge
+comment0.text=\r\n\ \ The\ {@code\ DirectedEdge}\ class\ represents\ a\ weighted\ edge\ in\ an\ \r\n\ \ {@link\ EdgeWeightedDigraph}.\ Each\ edge\ consists\ of\ two\ integers\r\n\ \ (naming\ the\ two\ vertices)\ and\ a\ real-value\ weight.\ The\ data\ type\r\n\ \ provides\ methods\ for\ accessing\ the\ two\ endpoints\ of\ the\ directed\ edge\ and\r\n\ \ the\ weight.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/44sp">Section\ 4.4</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=v\ w\ weight
+comment1.target=DirectedEdge(int,\ int,\ double)
+comment1.text=\r\n\ Initializes\ a\ directed\ edge\ from\ vertex\ {@code\ v}\ to\ vertex\ {@code\ w}\ with\r\n\ the\ given\ {@code\ weight}.\r\n\ @param\ v\ the\ tail\ vertex\r\n\ @param\ w\ the\ head\ vertex\r\n\ @param\ weight\ the\ weight\ of\ the\ directed\ edge\r\n\ @throws\ IllegalArgumentException\ if\ either\ {@code\ v}\ or\ {@code\ w}\r\n\ \ \ \ is\ a\ negative\ integer\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ weight}\ is\ {@code\ NaN}\r\n
+comment2.params=
+comment2.target=int\ from()
+comment2.text=\r\n\ Returns\ the\ tail\ vertex\ of\ the\ directed\ edge.\r\n\ @return\ the\ tail\ vertex\ of\ the\ directed\ edge\r\n
+comment3.params=
+comment3.target=int\ to()
+comment3.text=\r\n\ Returns\ the\ head\ vertex\ of\ the\ directed\ edge.\r\n\ @return\ the\ head\ vertex\ of\ the\ directed\ edge\r\n
+comment4.params=
+comment4.target=double\ weight()
+comment4.text=\r\n\ Returns\ the\ weight\ of\ the\ directed\ edge.\r\n\ @return\ the\ weight\ of\ the\ directed\ edge\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Returns\ a\ string\ representation\ of\ the\ directed\ edge.\r\n\ @return\ a\ string\ representation\ of\ the\ directed\ edge\r\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment6.text=\r\n\ Unit\ tests\ the\ {@code\ DirectedEdge}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=7

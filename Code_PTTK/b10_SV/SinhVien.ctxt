@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=SinhVien
+comment1.params=ten\ ngaySinh\ queQuan
+comment1.target=SinhVien(java.lang.String,\ VNDate,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getTen()
+comment3.params=
+comment3.target=VNDate\ getNgaySinh()
+comment4.params=
+comment4.target=java.lang.String\ getQueQuan()
+comment5.params=mon\ diem
+comment5.target=void\ nhapDiemMonSV(Mon,\ double)
+comment6.params=
+comment6.target=double\ tinhDiemTBC()
+comment7.params=kyThu
+comment7.target=double\ tinhDiemTBCHocKy(java.lang.String)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

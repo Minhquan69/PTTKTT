@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="algs4">
+    <CLASSES>
+      <root url="jar://C:/Program Files/BlueJ/lib/userlib/algs4.jar!/" />
+      <root url="jar://C:/Program Files/BlueJ/lib/userlib/stdlib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Program Files/BlueJ/lib/userlib/algs4.jar!/" />
+      <root url="jar://C:/Program Files/BlueJ/lib/userlib/stdlib.jar!/" />
+    </SOURCES>
+  </library>
+</component>

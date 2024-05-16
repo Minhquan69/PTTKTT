@@ -1,0 +1,62 @@
+#BlueJ class context
+comment0.target=IndexMaxPQ
+comment0.text=\r\n\ \ The\ {@code\ IndexMaxPQ}\ class\ represents\ an\ indexed\ priority\ queue\ of\ generic\ keys.\r\n\ \ It\ supports\ the\ usual\ <em>insert</em>\ and\ <em>delete-the-maximum</em>\r\n\ \ operations,\ along\ with\ <em>delete</em>\ and\ <em>change-the-key</em>\ \r\n\ \ methods.\ In\ order\ to\ let\ the\ client\ refer\ to\ items\ on\ the\ priority\ queue,\r\n\ \ an\ integer\ between\ {@code\ 0}\ and\ {@code\ maxN\ -\ 1}\r\n\ \ is\ associated\ with\ each\ key\uFFFDthe\ client\r\n\ \ uses\ this\ integer\ to\ specify\ which\ key\ to\ delete\ or\ change.\r\n\ \ It\ also\ supports\ methods\ for\ peeking\ at\ a\ maximum\ key,\r\n\ \ testing\ if\ the\ priority\ queue\ is\ empty,\ and\ iterating\ through\r\n\ \ the\ keys.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ a\ binary\ heap\ along\ with\ an\ array\ to\ associate\r\n\ \ keys\ with\ integers\ in\ the\ given\ range.\r\n\ \ The\ <em>insert</em>,\ <em>delete-the-maximum</em>,\ <em>delete</em>,\r\n\ \ <em>change-key</em>,\ <em>decrease-key</em>,\ and\ <em>increase-key</em>\r\n\ \ operations\ take\ logarithmic\ time.\r\n\ \ The\ <em>is-empty</em>,\ <em>size</em>,\ <em>max-index</em>,\ <em>max-key</em>,\r\n\ \ and\ <em>key-of</em>\ operations\ take\ constant\ time.\r\n\ \ Construction\ takes\ time\ proportional\ to\ the\ specified\ capacity.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/24pq">Section\ 2.4</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n\r\n\ \ @param\ <Key>\ the\ generic\ type\ of\ key\ on\ this\ priority\ queue\r\n
+comment1.params=maxN
+comment1.target=IndexMaxPQ(int)
+comment1.text=\r\n\ Initializes\ an\ empty\ indexed\ priority\ queue\ with\ indices\ between\ {@code\ 0}\r\n\ and\ {@code\ maxN\ -\ 1}.\r\n\r\n\ @param\ \ maxN\ the\ keys\ on\ this\ priority\ queue\ are\ index\ from\ {@code\ 0}\ to\ {@code\ maxN\ -\ 1}\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ maxN\ <\ 0}\r\n
+comment10.params=i\ key
+comment10.target=void\ changeKey(int,\ java.lang.Comparable)
+comment10.text=\r\n\ Change\ the\ key\ associated\ with\ index\ {@code\ i}\ to\ the\ specified\ value.\r\n\r\n\ @param\ \ i\ the\ index\ of\ the\ key\ to\ change\r\n\ @param\ \ key\ change\ the\ key\ associated\ with\ index\ {@code\ i}\ to\ this\ key\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ i\ <\ maxN}\r\n
+comment11.params=i\ key
+comment11.target=void\ change(int,\ java.lang.Comparable)
+comment11.text=\r\n\ Change\ the\ key\ associated\ with\ index\ {@code\ i}\ to\ the\ specified\ value.\r\n\r\n\ @param\ \ i\ the\ index\ of\ the\ key\ to\ change\r\n\ @param\ \ key\ change\ the\ key\ associated\ with\ index\ {@code\ i}\ to\ this\ key\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ i\ <\ maxN}\r\n\ @deprecated\ Replaced\ by\ {@code\ changeKey(int,\ Key)}.\r\n
+comment12.params=i\ key
+comment12.target=void\ increaseKey(int,\ java.lang.Comparable)
+comment12.text=\r\n\ Increase\ the\ key\ associated\ with\ index\ {@code\ i}\ to\ the\ specified\ value.\r\n\r\n\ @param\ \ i\ the\ index\ of\ the\ key\ to\ increase\r\n\ @param\ \ key\ increase\ the\ key\ associated\ with\ index\ {@code\ i}\ to\ this\ key\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ i\ <\ maxN}\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key\ <\=\ keyOf(i)}\r\n\ @throws\ NoSuchElementException\ no\ key\ is\ associated\ with\ index\ {@code\ i}\r\n
+comment13.params=i\ key
+comment13.target=void\ decreaseKey(int,\ java.lang.Comparable)
+comment13.text=\r\n\ Decrease\ the\ key\ associated\ with\ index\ {@code\ i}\ to\ the\ specified\ value.\r\n\r\n\ @param\ \ i\ the\ index\ of\ the\ key\ to\ decrease\r\n\ @param\ \ key\ decrease\ the\ key\ associated\ with\ index\ {@code\ i}\ to\ this\ key\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ i\ <\ maxN}\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key\ >\=\ keyOf(i)}\r\n\ @throws\ NoSuchElementException\ no\ key\ is\ associated\ with\ index\ {@code\ i}\r\n
+comment14.params=i
+comment14.target=void\ delete(int)
+comment14.text=\r\n\ Remove\ the\ key\ on\ the\ priority\ queue\ associated\ with\ index\ {@code\ i}.\r\n\r\n\ @param\ \ i\ the\ index\ of\ the\ key\ to\ remove\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ i\ <\ maxN}\r\n\ @throws\ NoSuchElementException\ no\ key\ is\ associated\ with\ index\ {@code\ i}\r\n
+comment15.params=i\ j
+comment15.target=boolean\ less(int,\ int)
+comment15.text=\r\n\ General\ helper\ functions.\r\n
+comment16.params=i\ j
+comment16.target=void\ exch(int,\ int)
+comment17.params=k
+comment17.target=void\ swim(int)
+comment17.text=\r\n\ Heap\ helper\ functions.\r\n
+comment18.params=k
+comment18.target=void\ sink(int)
+comment19.params=
+comment19.target=java.util.Iterator\ iterator()
+comment19.text=\r\n\ Returns\ an\ iterator\ that\ iterates\ over\ the\ keys\ on\ the\r\n\ priority\ queue\ in\ descending\ order.\r\n\ The\ iterator\ doesn't\ implement\ {@code\ remove()}\ since\ it's\ optional.\r\n\r\n\ @return\ an\ iterator\ that\ iterates\ over\ the\ keys\ in\ descending\ order\r\n
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment2.text=\r\n\ Returns\ true\ if\ this\ priority\ queue\ is\ empty.\r\n\r\n\ @return\ {@code\ true}\ if\ this\ priority\ queue\ is\ empty;\r\n\ \ \ \ \ \ \ \ \ {@code\ false}\ otherwise\r\n
+comment20.params=args
+comment20.target=void\ main(java.lang.String[])
+comment20.text=\r\n\ Unit\ tests\ the\ {@code\ IndexMaxPQ}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+comment3.params=i
+comment3.target=boolean\ contains(int)
+comment3.text=\r\n\ Is\ {@code\ i}\ an\ index\ on\ this\ priority\ queue?\r\n\r\n\ @param\ \ i\ an\ index\r\n\ @return\ {@code\ true}\ if\ {@code\ i}\ is\ an\ index\ on\ this\ priority\ queue;\r\n\ \ \ \ \ \ \ \ \ {@code\ false}\ otherwise\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ i\ <\ maxN}\r\n
+comment4.params=
+comment4.target=int\ size()
+comment4.text=\r\n\ Returns\ the\ number\ of\ keys\ on\ this\ priority\ queue.\r\n\r\n\ @return\ the\ number\ of\ keys\ on\ this\ priority\ queue\ \r\n
+comment5.params=i\ key
+comment5.target=void\ insert(int,\ java.lang.Comparable)
+comment5.text=\r\n\ Associate\ key\ with\ index\ i.\r\n\r\n\ @param\ \ i\ an\ index\r\n\ @param\ \ key\ the\ key\ to\ associate\ with\ index\ {@code\ i}\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ i\ <\ maxN}\r\n\ @throws\ IllegalArgumentException\ if\ there\ already\ is\ an\ item\r\n\ \ \ \ \ \ \ \ \ associated\ with\ index\ {@code\ i}\r\n
+comment6.params=
+comment6.target=int\ maxIndex()
+comment6.text=\r\n\ Returns\ an\ index\ associated\ with\ a\ maximum\ key.\r\n\r\n\ @return\ an\ index\ associated\ with\ a\ maximum\ key\r\n\ @throws\ NoSuchElementException\ if\ this\ priority\ queue\ is\ empty\r\n
+comment7.params=
+comment7.target=java.lang.Comparable\ maxKey()
+comment7.text=\r\n\ Returns\ a\ maximum\ key.\r\n\r\n\ @return\ a\ maximum\ key\r\n\ @throws\ NoSuchElementException\ if\ this\ priority\ queue\ is\ empty\r\n
+comment8.params=
+comment8.target=int\ delMax()
+comment8.text=\r\n\ Removes\ a\ maximum\ key\ and\ returns\ its\ associated\ index.\r\n\r\n\ @return\ an\ index\ associated\ with\ a\ maximum\ key\r\n\ @throws\ NoSuchElementException\ if\ this\ priority\ queue\ is\ empty\r\n
+comment9.params=i
+comment9.target=java.lang.Comparable\ keyOf(int)
+comment9.text=\r\n\ Returns\ the\ key\ associated\ with\ index\ {@code\ i}.\r\n\r\n\ @param\ \ i\ the\ index\ of\ the\ key\ to\ return\r\n\ @return\ the\ key\ associated\ with\ index\ {@code\ i}\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ i\ <\ maxN}\r\n\ @throws\ NoSuchElementException\ no\ key\ is\ associated\ with\ index\ {@code\ i}\r\n
+numComments=21

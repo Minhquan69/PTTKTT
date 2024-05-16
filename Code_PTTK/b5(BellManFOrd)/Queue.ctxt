@@ -1,0 +1,30 @@
+#BlueJ class context
+comment0.target=Queue
+comment0.text=\r\n\ \ The\ {@code\ Queue}\ class\ represents\ a\ first-in-first-out\ (FIFO)\r\n\ \ queue\ of\ generic\ items.\r\n\ \ It\ supports\ the\ usual\ <em>enqueue</em>\ and\ <em>dequeue</em>\r\n\ \ operations,\ along\ with\ methods\ for\ peeking\ at\ the\ first\ item,\r\n\ \ testing\ if\ the\ queue\ is\ empty,\ and\ iterating\ through\r\n\ \ the\ items\ in\ FIFO\ order.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ a\ singly\ linked\ list\ with\ a\ static\ nested\ class\ for\r\n\ \ linked-list\ nodes.\ See\ {@link\ LinkedQueue}\ for\ the\ version\ from\ the\r\n\ \ textbook\ that\ uses\ a\ non-static\ nested\ class.\r\n\ \ See\ {@link\ ResizingArrayQueue}\ for\ a\ version\ that\ uses\ a\ resizing\ array.\r\n\ \ The\ <em>enqueue</em>,\ <em>dequeue</em>,\ <em>peek</em>,\ <em>size</em>,\ and\ <em>is-empty</em>\r\n\ \ operations\ all\ take\ constant\ time\ in\ the\ worst\ case.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/13stacks">Section\ 1.3</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n\r\n\ \ @param\ <Item>\ the\ generic\ type\ of\ an\ item\ in\ this\ queue\r\n
+comment1.params=
+comment1.target=Queue()
+comment1.text=\r\n\ Initializes\ an\ empty\ queue.\r\n
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment2.text=\r\n\ Returns\ true\ if\ this\ queue\ is\ empty.\r\n\r\n\ @return\ {@code\ true}\ if\ this\ queue\ is\ empty;\ {@code\ false}\ otherwise\r\n
+comment3.params=
+comment3.target=int\ size()
+comment3.text=\r\n\ Returns\ the\ number\ of\ items\ in\ this\ queue.\r\n\r\n\ @return\ the\ number\ of\ items\ in\ this\ queue\r\n
+comment4.params=
+comment4.target=java.lang.Object\ peek()
+comment4.text=\r\n\ Returns\ the\ item\ least\ recently\ added\ to\ this\ queue.\r\n\r\n\ @return\ the\ item\ least\ recently\ added\ to\ this\ queue\r\n\ @throws\ NoSuchElementException\ if\ this\ queue\ is\ empty\r\n
+comment5.params=item
+comment5.target=void\ enqueue(java.lang.Object)
+comment5.text=\r\n\ Adds\ the\ item\ to\ this\ queue.\r\n\r\n\ @param\ \ item\ the\ item\ to\ add\r\n
+comment6.params=
+comment6.target=java.lang.Object\ dequeue()
+comment6.text=\r\n\ Removes\ and\ returns\ the\ item\ on\ this\ queue\ that\ was\ least\ recently\ added.\r\n\r\n\ @return\ the\ item\ on\ this\ queue\ that\ was\ least\ recently\ added\r\n\ @throws\ NoSuchElementException\ if\ this\ queue\ is\ empty\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Returns\ a\ string\ representation\ of\ this\ queue.\r\n\r\n\ @return\ the\ sequence\ of\ items\ in\ FIFO\ order,\ separated\ by\ spaces\r\n
+comment8.params=
+comment8.target=java.util.Iterator\ iterator()
+comment8.text=\r\n\ Returns\ an\ iterator\ that\ iterates\ over\ the\ items\ in\ this\ queue\ in\ FIFO\ order.\r\n\r\n\ @return\ an\ iterator\ that\ iterates\ over\ the\ items\ in\ this\ queue\ in\ FIFO\ order\r\n
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10

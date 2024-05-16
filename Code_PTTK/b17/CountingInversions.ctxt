@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=CountingInversions
+comment1.params=
+comment1.target=CountingInversions()
+comment2.params=a\ aux\ lo\ mid\ hi
+comment2.target=long\ merge(java.lang.String[],\ java.lang.String[],\ int,\ int,\ int)
+comment3.params=a\ b\ aux\ lo\ hi
+comment3.target=long\ count(java.lang.String[],\ java.lang.String[],\ java.lang.String[],\ int,\ int)
+comment4.params=a
+comment4.target=long\ count(java.lang.String[])
+comment4.text=\r\n\ Tr?\ v?\ s?\ l??ng\ ngh?ch\ th?\ trong\ m?ng\ chu?i.\r\n\ M?ng\ ??i\ s?\ kh\uFFFDng\ b?\ s?a\ ??i.\r\n\ @param\ a\ m?ng\r\n\ @return\ s?\ l??ng\ ngh?ch\ th?\ trong\ m?ng.\ M?t\ ngh?ch\ th?\ l\uFFFD\ m?t\ c?p\ ch?\ s?\r\n\ \ \ \ \ \ \ \ \ {@code\ i}\ v\uFFFD\ {@code\ j}\ sao\ cho\ {@code\ i\ <\ j}\ v\uFFFD\r\n\ \ \ \ \ \ \ \ \ {@code\ a[i].compareTo(a[j])\ >\ 0}.\r\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

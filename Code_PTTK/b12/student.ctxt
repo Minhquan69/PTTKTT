@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=student
+comment1.params=id\ ho\ name\ when\ tbc
+comment1.target=student(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.util.Date,\ double)
+comment2.params=student
+comment2.target=student(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=that
+comment4.target=int\ compareTo(student)
+comment5.params=other
+comment5.target=boolean\ equals(java.lang.Object)
+comment6.params=
+comment6.target=int\ hascode()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

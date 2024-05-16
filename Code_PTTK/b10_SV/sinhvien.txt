@@ -1,0 +1,5 @@
+Nguyen Van X,10/08/1997,Hà Tĩnh,Toán,9.0,2,Lý,8.5,2,Hóa,7.5,2,Văn,8.0,3,GDCD,8.5,3
+Tran Thi Y,05/03/2001,Hải Phòng,Toán,8.5,1,Lý,8.0,2,Hóa,9.0,1,Văn,7.5,2,GDCD,8.0,3
+Le Van Z,20/11/1999,Quảng Nam,Toán,8.0,1,Lý,8.5,1,Hóa,7.0,1,Văn,9.0,1,GDCD,8.5,1
+Pham Thi M,15/09/2002,Bình Định,Toán,7.5,1,Lý,8.0,1,Hóa,8.5,1,Văn,7.0,2,GDCD,8.0,2
+Hoang Van N,30/12/2000,Nghệ An,Toán,9.0,1,Lý,8.5,1,Hóa,8.5,1,Văn,8.5,2,GDCD,9.0,2

@@ -1,0 +1,45 @@
+#BlueJ class context
+comment0.target=EdgeWeightedDigraph
+comment0.text=\r\n\ \ The\ {@code\ EdgeWeightedDigraph}\ class\ represents\ a\ edge-weighted\r\n\ \ digraph\ of\ vertices\ named\ 0\ through\ <em>V</em>\ -\ 1,\ where\ each\r\n\ \ directed\ edge\ is\ of\ type\ {@link\ DirectedEdge}\ and\ has\ a\ real-valued\ weight.\r\n\ \ It\ supports\ the\ following\ two\ primary\ operations\:\ add\ a\ directed\ edge\r\n\ \ to\ the\ digraph\ and\ iterate\ over\ all\ of\ edges\ incident\ from\ a\ given\ vertex.\r\n\ \ It\ also\ provides\r\n\ \ methods\ for\ returning\ the\ number\ of\ vertices\ <em>V</em>\ and\ the\ number\r\n\ \ of\ edges\ <em>E</em>.\ Parallel\ edges\ and\ self-loops\ are\ permitted.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ an\ adjacency-lists\ representation,\ which\ \r\n\ \ is\ a\ vertex-indexed\ array\ of\ {@link\ Bag}\ objects.\r\n\ \ All\ operations\ take\ constant\ time\ (in\ the\ worst\ case)\ except\r\n\ \ iterating\ over\ the\ edges\ incident\ from\ a\ given\ vertex,\ which\ takes\r\n\ \ time\ proportional\ to\ the\ number\ of\ such\ edges.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\r\n\ \ see\ <a\ href\="https\://algs4.cs.princeton.edu/44sp">Section\ 4.4</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=V
+comment1.target=EdgeWeightedDigraph(int)
+comment1.text=\r\n\ Initializes\ an\ empty\ edge-weighted\ digraph\ with\ {@code\ V}\ vertices\ and\ 0\ edges.\r\n\r\n\ @param\ \ V\ the\ number\ of\ vertices\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ V\ <\ 0}\r\n
+comment10.params=v
+comment10.target=int\ outdegree(int)
+comment10.text=\r\n\ Returns\ the\ number\ of\ directed\ edges\ incident\ from\ vertex\ {@code\ v}.\r\n\ This\ is\ known\ as\ the\ <em>outdegree</em>\ of\ vertex\ {@code\ v}.\r\n\r\n\ @param\ \ v\ the\ vertex\r\n\ @return\ the\ outdegree\ of\ vertex\ {@code\ v}\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment11.params=v
+comment11.target=int\ indegree(int)
+comment11.text=\r\n\ Returns\ the\ number\ of\ directed\ edges\ incident\ to\ vertex\ {@code\ v}.\r\n\ This\ is\ known\ as\ the\ <em>indegree</em>\ of\ vertex\ {@code\ v}.\r\n\r\n\ @param\ \ v\ the\ vertex\r\n\ @return\ the\ indegree\ of\ vertex\ {@code\ v}\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment12.params=
+comment12.target=java.lang.Iterable\ edges()
+comment12.text=\r\n\ Returns\ all\ directed\ edges\ in\ this\ edge-weighted\ digraph.\r\n\ To\ iterate\ over\ the\ edges\ in\ this\ edge-weighted\ digraph,\ use\ foreach\ notation\:\r\n\ {@code\ for\ (DirectedEdge\ e\ \:\ G.edges())}.\r\n\r\n\ @return\ all\ edges\ in\ this\ edge-weighted\ digraph,\ as\ an\ iterable\r\n
+comment13.params=
+comment13.target=java.lang.String\ toString()
+comment13.text=\r\n\ Returns\ a\ string\ representation\ of\ this\ edge-weighted\ digraph.\r\n\r\n\ @return\ the\ number\ of\ vertices\ <em>V</em>,\ followed\ by\ the\ number\ of\ edges\ <em>E</em>,\r\n\ \ \ \ \ \ \ \ \ followed\ by\ the\ <em>V</em>\ adjacency\ lists\ of\ edges\r\n
+comment14.params=args
+comment14.target=void\ main(java.lang.String[])
+comment14.text=\r\n\ Unit\ tests\ the\ {@code\ EdgeWeightedDigraph}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+comment2.params=V\ E
+comment2.target=EdgeWeightedDigraph(int,\ int)
+comment2.text=\r\n\ Initializes\ a\ random\ edge-weighted\ digraph\ with\ {@code\ V}\ vertices\ and\ <em>E</em>\ edges.\r\n\r\n\ @param\ \ V\ the\ number\ of\ vertices\r\n\ @param\ \ E\ the\ number\ of\ edges\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ V\ <\ 0}\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ E\ <\ 0}\r\n
+comment3.params=in
+comment3.target=EdgeWeightedDigraph(In)
+comment3.text=\ \ \r\n\ Initializes\ an\ edge-weighted\ digraph\ from\ the\ specified\ input\ stream.\r\n\ The\ format\ is\ the\ number\ of\ vertices\ <em>V</em>,\r\n\ followed\ by\ the\ number\ of\ edges\ <em>E</em>,\r\n\ followed\ by\ <em>E</em>\ pairs\ of\ vertices\ and\ edge\ weights,\r\n\ with\ each\ entry\ separated\ by\ whitespace.\r\n\r\n\ @param\ \ in\ the\ input\ stream\r\n\ @throws\ IllegalArgumentException\ if\ the\ endpoints\ of\ any\ edge\ are\ not\ in\ prescribed\ range\r\n\ @throws\ IllegalArgumentException\ if\ the\ number\ of\ vertices\ or\ edges\ is\ negative\r\n
+comment4.params=G
+comment4.target=EdgeWeightedDigraph(EdgeWeightedDigraph)
+comment4.text=\r\n\ Initializes\ a\ new\ edge-weighted\ digraph\ that\ is\ a\ deep\ copy\ of\ {@code\ G}.\r\n\r\n\ @param\ \ G\ the\ edge-weighted\ digraph\ to\ copy\r\n
+comment5.params=
+comment5.target=int\ V()
+comment5.text=\r\n\ Returns\ the\ number\ of\ vertices\ in\ this\ edge-weighted\ digraph.\r\n\r\n\ @return\ the\ number\ of\ vertices\ in\ this\ edge-weighted\ digraph\r\n
+comment6.params=
+comment6.target=int\ E()
+comment6.text=\r\n\ Returns\ the\ number\ of\ edges\ in\ this\ edge-weighted\ digraph.\r\n\r\n\ @return\ the\ number\ of\ edges\ in\ this\ edge-weighted\ digraph\r\n
+comment7.params=v
+comment7.target=void\ validateVertex(int)
+comment8.params=e
+comment8.target=void\ addEdge(DirectedEdge)
+comment8.text=\r\n\ Adds\ the\ directed\ edge\ {@code\ e}\ to\ this\ edge-weighted\ digraph.\r\n\r\n\ @param\ \ e\ the\ edge\r\n\ @throws\ IllegalArgumentException\ unless\ endpoints\ of\ edge\ are\ between\ {@code\ 0}\r\n\ \ \ \ \ \ \ \ \ and\ {@code\ V-1}\r\n
+comment9.params=v
+comment9.target=java.lang.Iterable\ adj(int)
+comment9.text=\r\n\ Returns\ the\ directed\ edges\ incident\ from\ vertex\ {@code\ v}.\r\n\r\n\ @param\ \ v\ the\ vertex\r\n\ @return\ the\ directed\ edges\ incident\ from\ vertex\ {@code\ v}\ as\ an\ Iterable\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+numComments=15

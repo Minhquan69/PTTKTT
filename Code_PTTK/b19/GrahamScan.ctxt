@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=GrahamScan
+comment0.text=\r\n\ \ The\ {@code\ GrahamScan}\ data\ type\ provides\ methods\ for\ computing\ the\ \r\n\ \ convex\ hull\ of\ a\ set\ of\ <em>n</em>\ points\ in\ the\ plane.\r\n\ \ <p>\r\n\ \ The\ implementation\ uses\ the\ Graham-Scan\ convex\ hull\ algorithm.\r\n\ \ It\ runs\ in\ O(<em>n</em>\ log\ <em>n</em>)\ time\ in\ the\ worst\ case\r\n\ \ and\ uses\ O(<em>n</em>)\ extra\ memory.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/99scientific">Section\ 9.9</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=points
+comment1.target=GrahamScan(Point2D[])
+comment1.text=\r\n\ Computes\ the\ convex\ hull\ of\ the\ specified\ array\ of\ points.\r\n\r\n\ @param\ \ points\ the\ array\ of\ points\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ points}\ is\ {@code\ null}\r\n\ @throws\ IllegalArgumentException\ if\ any\ entry\ in\ {@code\ points[]}\ is\ {@code\ null}\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ points.length}\ is\ {@code\ 0}\r\n
+comment2.params=
+comment2.target=java.lang.Iterable\ hull()
+comment2.text=\r\n\ Returns\ the\ extreme\ points\ on\ the\ convex\ hull\ in\ counterclockwise\ order.\r\n\r\n\ @return\ the\ extreme\ points\ on\ the\ convex\ hull\ in\ counterclockwise\ order\r\n
+comment3.params=
+comment3.target=boolean\ isConvex()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment4.text=\r\n\ Unit\ tests\ the\ {@code\ GrahamScan}\ data\ type.\r\n\ Reads\ in\ an\ integer\ {@code\ n}\ and\ {@code\ n}\ points\ (specified\ by\r\n\ their\ <em>x</em>-\ and\ <em>y</em>-coordinates)\ from\ standard\ input;\r\n\ computes\ their\ convex\ hull;\ and\ prints\ out\ the\ points\ on\ the\r\n\ convex\ hull\ to\ standard\ output.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=5

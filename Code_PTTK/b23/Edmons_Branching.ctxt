@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Edmons_Branching
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Edmons_Branching\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=G\ s
+comment1.target=Edmons_Branching(EdgeWeightedDigraph_T,\ int)
+comment2.params=G\ supernode
+comment2.target=void\ extract(EdgeWeightedDigraph_T,\ java.lang.Iterable)
+comment3.params=
+comment3.target=java.lang.Iterable\ findCycle()
+comment4.params=v
+comment4.target=double\ distTo(int)
+comment5.params=v
+comment5.target=DirectedEdge\ edgeTo(int)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

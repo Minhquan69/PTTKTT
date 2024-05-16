@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Edge
+comment0.text=\r\n\ \ The\ {@code\ Edge}\ class\ represents\ a\ weighted\ edge\ in\ an\ \r\n\ \ {@link\ EdgeWeightedGraph}.\ Each\ edge\ consists\ of\ two\ integers\r\n\ \ (naming\ the\ two\ vertices)\ and\ a\ real-value\ weight.\ The\ data\ type\r\n\ \ provides\ methods\ for\ accessing\ the\ two\ endpoints\ of\ the\ edge\ and\r\n\ \ the\ weight.\ The\ natural\ order\ for\ this\ data\ type\ is\ by\r\n\ \ ascending\ order\ of\ weight.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/43mst">Section\ 4.3</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=v\ w\ weight
+comment1.target=Edge(int,\ int,\ double)
+comment1.text=\r\n\ Initializes\ an\ edge\ between\ vertices\ {@code\ v}\ and\ {@code\ w}\ of\r\n\ the\ given\ {@code\ weight}.\r\n\r\n\ @param\ \ v\ one\ vertex\r\n\ @param\ \ w\ the\ other\ vertex\r\n\ @param\ \ weight\ the\ weight\ of\ this\ edge\r\n\ @throws\ IllegalArgumentException\ if\ either\ {@code\ v}\ or\ {@code\ w}\ \r\n\ \ \ \ \ \ \ \ \ is\ a\ negative\ integer\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ weight}\ is\ {@code\ NaN}\r\n
+comment2.params=
+comment2.target=double\ weight()
+comment2.text=\r\n\ Returns\ the\ weight\ of\ this\ edge.\r\n\r\n\ @return\ the\ weight\ of\ this\ edge\r\n
+comment3.params=
+comment3.target=int\ either()
+comment3.text=\r\n\ Returns\ either\ endpoint\ of\ this\ edge.\r\n\r\n\ @return\ either\ endpoint\ of\ this\ edge\r\n
+comment4.params=vertex
+comment4.target=int\ other(int)
+comment4.text=\r\n\ Returns\ the\ endpoint\ of\ this\ edge\ that\ is\ different\ from\ the\ given\ vertex.\r\n\r\n\ @param\ \ vertex\ one\ endpoint\ of\ this\ edge\r\n\ @return\ the\ other\ endpoint\ of\ this\ edge\r\n\ @throws\ IllegalArgumentException\ if\ the\ vertex\ is\ not\ one\ of\ the\r\n\ \ \ \ \ \ \ \ \ endpoints\ of\ this\ edge\r\n
+comment5.params=that
+comment5.target=int\ compareTo(Edge)
+comment5.text=\r\n\ Compares\ two\ edges\ by\ weight.\r\n\ Note\ that\ {@code\ compareTo()}\ is\ not\ consistent\ with\ {@code\ equals()},\r\n\ which\ uses\ the\ reference\ equality\ implementation\ inherited\ from\ {@code\ Object}.\r\n\r\n\ @param\ \ that\ the\ other\ edge\r\n\ @return\ a\ negative\ integer,\ zero,\ or\ positive\ integer\ depending\ on\ whether\r\n\ \ \ \ \ \ \ \ \ the\ weight\ of\ this\ is\ less\ than,\ equal\ to,\ or\ greater\ than\ the\r\n\ \ \ \ \ \ \ \ \ argument\ edge\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Returns\ a\ string\ representation\ of\ this\ edge.\r\n\r\n\ @return\ a\ string\ representation\ of\ this\ edge\r\n
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=\r\n\ Unit\ tests\ the\ {@code\ Edge}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=8

@@ -1,0 +1,33 @@
+#BlueJ class context
+comment0.target=BellmanFord_T
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BellmanFord_T\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=G\ s
+comment1.target=BellmanFord_T(EdgeWeightedDigraph_T,\ int)
+comment1.text=\r\n\ Computes\ a\ shortest\ paths\ tree\ from\ every\ other\ vertex\ to\ {code\ @s}\ in\r\n\ the\ edge-weighted\ digraph_T\ {@code\ G}.\r\n\ @param\ G\ the\ acyclic\ digraph\r\n\ @param\ s\ the\ dist\ vertex\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ s\ <\ V}\r\n
+comment10.params=v
+comment10.target=void\ validateVertex(int)
+comment11.params=args
+comment11.target=void\ main(java.lang.String[])
+comment11.text=\r\n\ Unit\ tests\ the\ {@code\ BellmanFordSP}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+comment2.params=G\ v
+comment2.target=void\ relax(EdgeWeightedDigraph_T,\ int)
+comment3.params=
+comment3.target=boolean\ hasNegativeCycle()
+comment3.text=\r\n\ Is\ there\ a\ negative\ cycle\ reachable\ from\ the\ source\ vertex\ {@code\ s}?\r\n\ @return\ {@code\ true}\ if\ there\ is\ a\ negative\ cycle\ reachable\ from\ the\r\n\ \ \ \ source\ vertex\ {@code\ s},\ and\ {@code\ false}\ otherwise\r\n
+comment4.params=
+comment4.target=java.lang.Iterable\ negativeCycle()
+comment4.text=\r\n\ Returns\ a\ negative\ cycle\ reachable\ from\ the\ source\ vertex\ {@code\ s},\ or\ {@code\ null}\r\n\ if\ there\ is\ no\ such\ cycle.\r\n\ @return\ a\ negative\ cycle\ reachable\ from\ the\ soruce\ vertex\ {@code\ s}\ \r\n\ \ \ \ as\ an\ iterable\ of\ edges,\ and\ {@code\ null}\ if\ there\ is\ no\ such\ cycle\r\n
+comment5.params=
+comment5.target=void\ findNegativeCycle()
+comment6.params=v
+comment6.target=double\ distFrom(int)
+comment6.text=\r\n\ Returns\ the\ length\ of\ a\ shortest\ path\ from\ the\ source\ vertex\ {@code\ s}\ to\ vertex\ {@code\ v}.\r\n\ @param\ \ v\ the\ destination\ vertex\r\n\ @return\ the\ length\ of\ a\ shortest\ path\ from\ the\ source\ vertex\ {@code\ s}\ to\ vertex\ {@code\ v};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.POSITIVE_INFINITY}\ if\ no\ such\ path\r\n\ @throws\ UnsupportedOperationException\ if\ there\ is\ a\ negative\ cost\ cycle\ reachable\r\n\ \ \ \ \ \ \ \ \ from\ the\ source\ vertex\ {@code\ s}\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment7.params=v
+comment7.target=boolean\ hasPathFrom(int)
+comment7.text=\r\n\ Is\ there\ a\ path\ from\ the\ source\ {@code\ s}\ to\ vertex\ {@code\ v}?\r\n\ @param\ \ v\ the\ source\ vertex\r\n\ @return\ {@code\ true}\ if\ there\ is\ a\ path\ from\ the\ source\ vertex\r\n\ \ \ \ \ \ \ \ \ {@code\ v}\ to\ vertex\ {@code\ s},\ and\ {@code\ false}\ otherwise\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment8.params=v
+comment8.target=java.lang.Iterable\ pathTo(int)
+comment8.text=\r\n\ Returns\ a\ shortest\ path\ from\ the\ source\ {@code\ s}\ to\ vertex\ {@code\ v}.\r\n\ @param\ \ v\ the\ destination\ vertex\r\n\ @return\ a\ shortest\ path\ from\ the\ source\ {@code\ s}\ to\ vertex\ {@code\ v}\r\n\ \ \ \ \ \ \ \ \ as\ an\ iterable\ of\ edges,\ and\ {@code\ null}\ if\ no\ such\ path\r\n\ @throws\ UnsupportedOperationException\ if\ there\ is\ a\ negative\ cost\ cycle\ reachable\r\n\ \ \ \ \ \ \ \ \ from\ the\ source\ vertex\ {@code\ s}\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment9.params=G\ s
+comment9.target=boolean\ check(EdgeWeightedDigraph_T,\ int)
+numComments=12

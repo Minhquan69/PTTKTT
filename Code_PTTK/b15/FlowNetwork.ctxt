@@ -1,0 +1,35 @@
+#BlueJ class context
+comment0.target=FlowNetwork
+comment0.text=\r\n\ \ The\ {@code\ FlowNetwork}\ class\ represents\ a\ capacitated\ network\r\n\ \ with\ vertices\ named\ 0\ through\ <em>V</em>\ -\ 1,\ where\ each\ directed\r\n\ \ edge\ is\ of\ type\ {@link\ FlowEdge}\ and\ has\ a\ real-valued\ capacity\r\n\ \ and\ flow.\r\n\ \ It\ supports\ the\ following\ two\ primary\ operations\:\ add\ an\ edge\ to\ the\ network,\r\n\ \ iterate\ over\ all\ of\ the\ edges\ incident\ to\ or\ from\ a\ vertex.\ It\ also\ provides\r\n\ \ methods\ for\ returning\ the\ number\ of\ vertices\ <em>V</em>\ and\ the\ number\r\n\ \ of\ edges\ <em>E</em>.\ Parallel\ edges\ and\ self-loops\ are\ permitted.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ an\ adjacency-lists\ representation,\ which\ \r\n\ \ is\ a\ vertex-indexed\ array\ of\ {@link\ Bag}\ objects.\r\n\ \ All\ operations\ take\ constant\ time\ (in\ the\ worst\ case)\ except\r\n\ \ iterating\ over\ the\ edges\ incident\ to\ a\ given\ vertex,\ which\ takes\r\n\ \ time\ proportional\ to\ the\ number\ of\ such\ edges.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\r\n\ \ see\ <a\ href\="https\://algs4.cs.princeton.edu/64maxflow">Section\ 6.4</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=V
+comment1.target=FlowNetwork(int)
+comment1.text=\r\n\ Initializes\ an\ empty\ flow\ network\ with\ {@code\ V}\ vertices\ and\ 0\ edges.\r\n\ @param\ V\ the\ number\ of\ vertices\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ V\ <\ 0}\r\n
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment10.text=\r\n\ Returns\ a\ string\ representation\ of\ the\ flow\ network.\r\n\ This\ method\ takes\ time\ proportional\ to\ <em>E</em>\ +\ <em>V</em>.\r\n\ @return\ the\ number\ of\ vertices\ <em>V</em>,\ followed\ by\ the\ number\ of\ edges\ <em>E</em>,\ \ \r\n\ \ \ \ followed\ by\ the\ <em>V</em>\ adjacency\ lists\r\n
+comment11.params=args
+comment11.target=void\ main(java.lang.String[])
+comment11.text=\r\n\ Unit\ tests\ the\ {@code\ FlowNetwork}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+comment2.params=V\ E
+comment2.target=FlowNetwork(int,\ int)
+comment2.text=\r\n\ Initializes\ a\ random\ flow\ network\ with\ {@code\ V}\ vertices\ and\ <em>E</em>\ edges.\r\n\ The\ capacities\ are\ integers\ between\ 0\ and\ 99\ and\ the\ flow\ values\ are\ zero.\r\n\ @param\ V\ the\ number\ of\ vertices\r\n\ @param\ E\ the\ number\ of\ edges\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ V\ <\ 0}\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ E\ <\ 0}\r\n
+comment3.params=in
+comment3.target=FlowNetwork(In)
+comment3.text=\ \ \r\n\ Initializes\ a\ flow\ network\ from\ an\ input\ stream.\r\n\ The\ format\ is\ the\ number\ of\ vertices\ <em>V</em>,\r\n\ followed\ by\ the\ number\ of\ edges\ <em>E</em>,\r\n\ followed\ by\ <em>E</em>\ pairs\ of\ vertices\ and\ edge\ capacities,\r\n\ with\ each\ entry\ separated\ by\ whitespace.\r\n\ @param\ in\ the\ input\ stream\r\n\ @throws\ IllegalArgumentException\ if\ the\ endpoints\ of\ any\ edge\ are\ not\ in\ prescribed\ range\r\n\ @throws\ IllegalArgumentException\ if\ the\ number\ of\ vertices\ or\ edges\ is\ negative\r\n
+comment4.params=
+comment4.target=int\ V()
+comment4.text=\r\n\ Returns\ the\ number\ of\ vertices\ in\ the\ edge-weighted\ graph.\r\n\ @return\ the\ number\ of\ vertices\ in\ the\ edge-weighted\ graph\r\n
+comment5.params=
+comment5.target=int\ E()
+comment5.text=\r\n\ Returns\ the\ number\ of\ edges\ in\ the\ edge-weighted\ graph.\r\n\ @return\ the\ number\ of\ edges\ in\ the\ edge-weighted\ graph\r\n
+comment6.params=v
+comment6.target=void\ validateVertex(int)
+comment7.params=e
+comment7.target=void\ addEdge(FlowEdge)
+comment7.text=\r\n\ Adds\ the\ edge\ {@code\ e}\ to\ the\ network.\r\n\ @param\ e\ the\ edge\r\n\ @throws\ IllegalArgumentException\ unless\ endpoints\ of\ edge\ are\ between\r\n\ \ \ \ \ \ \ \ \ {@code\ 0}\ and\ {@code\ V-1}\r\n
+comment8.params=v
+comment8.target=java.lang.Iterable\ adj(int)
+comment8.text=\r\n\ Returns\ the\ edges\ incident\ on\ vertex\ {@code\ v}\ (includes\ both\ edges\ pointing\ to\r\n\ and\ from\ {@code\ v}).\r\n\ @param\ v\ the\ vertex\r\n\ @return\ the\ edges\ incident\ on\ vertex\ {@code\ v}\ as\ an\ Iterable\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment9.params=
+comment9.target=java.lang.Iterable\ edges()
+numComments=12

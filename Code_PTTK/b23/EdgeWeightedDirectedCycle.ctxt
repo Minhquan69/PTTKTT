@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=EdgeWeightedDirectedCycle
+comment1.params=G
+comment1.target=EdgeWeightedDirectedCycle(EdgeWeightedDigraph)
+comment2.params=G
+comment2.target=EdgeWeightedDirectedCycle(EdgeWeightedDigraph_T)
+comment3.params=G\ v
+comment3.target=void\ dfs(EdgeWeightedDigraph,\ int)
+comment4.params=G\ v
+comment4.target=void\ dfs(EdgeWeightedDigraph_T,\ int)
+comment5.params=
+comment5.target=boolean\ hasCycle()
+comment6.params=
+comment6.target=java.lang.Iterable\ cycle()
+comment7.params=
+comment7.target=boolean\ check()
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

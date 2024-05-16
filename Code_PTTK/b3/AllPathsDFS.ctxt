@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=AllPathsDFS
+comment1.params=G\ s\ t
+comment1.target=AllPathsDFS(EdgeWeightedDigraph,\ int,\ int)
+comment2.params=G\ v\ t
+comment2.target=void\ dfs(EdgeWeightedDigraph,\ int,\ int)
+comment3.params=
+comment3.target=java.lang.Iterable\ paths()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

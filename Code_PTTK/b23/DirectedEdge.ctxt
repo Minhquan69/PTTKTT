@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=DirectedEdge
+comment1.params=v\ w\ weight
+comment1.target=DirectedEdge(int,\ int,\ double)
+comment2.params=
+comment2.target=int\ from()
+comment3.params=
+comment3.target=int\ to()
+comment4.params=
+comment4.target=double\ weight()
+comment5.params=
+comment5.target=void\ used()
+comment6.params=
+comment6.target=boolean\ isUsed()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

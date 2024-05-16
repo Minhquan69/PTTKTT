@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FarthestPair
+comment0.text=\r\n\ \ The\ {@code\ FarthestPair}\ data\ type\ computes\ the\ farthest\ pair\ of\ points\r\n\ \ in\ a\ set\ of\ <em>n</em>\ points\ in\ the\ plane\ and\ provides\ accessor\ methods\r\n\ \ for\ getting\ the\ farthest\ pair\ of\ points\ and\ the\ distance\ between\ them.\r\n\ \ The\ distance\ between\ two\ points\ is\ their\ Euclidean\ distance.\r\n\ \ <p>\r\n\ \ This\ implementation\ computes\ the\ convex\ hull\ of\ the\ set\ of\ points\ and\r\n\ \ uses\ the\ rotating\ calipers\ method\ to\ find\ all\ antipodal\ point\ pairs\r\n\ \ and\ the\ farthest\ pair.\r\n\ \ It\ runs\ in\ O(<em>n</em>\ log\ <em>n</em>)\ time\ in\ the\ worst\ case\ and\ uses\r\n\ \ O(<em>N</em>)\ extra\ space.\r\n\ \ See\ also\ {@link\ ClosestPair}\ and\ {@link\ GrahamScan}.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/99hull">Section\ 9.9</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=points
+comment1.target=FarthestPair(Point2D[])
+comment1.text=\r\n\ Computes\ the\ farthest\ pair\ of\ points\ in\ the\ specified\ array\ of\ points.\r\n\r\n\ @param\ \ points\ the\ array\ of\ points\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ points}\ is\ {@code\ null}\ or\ if\ any\r\n\ \ \ \ \ \ \ \ \ entry\ in\ {@code\ points[]}\ is\ {@code\ null}\r\n
+comment2.params=
+comment2.target=Point2D\ either()
+comment2.text=\r\n\ Returns\ one\ of\ the\ points\ in\ the\ farthest\ pair\ of\ points.\r\n\r\n\ @return\ one\ of\ the\ two\ points\ in\ the\ farthest\ pair\ of\ points;\r\n\ \ \ \ \ \ \ \ \ {@code\ null}\ if\ no\ such\ point\ (because\ there\ are\ fewer\ than\ 2\ points)\r\n
+comment3.params=
+comment3.target=Point2D\ other()
+comment3.text=\r\n\ Returns\ the\ other\ point\ in\ the\ farthest\ pair\ of\ points.\r\n\r\n\ @return\ the\ other\ point\ in\ the\ farthest\ pair\ of\ points\r\n\ \ \ \ \ \ \ \ \ {@code\ null}\ if\ no\ such\ point\ (because\ there\ are\ fewer\ than\ 2\ points)\r\n
+comment4.params=
+comment4.target=double\ distance()
+comment4.text=\r\n\ Returns\ the\ Eucliden\ distance\ between\ the\ farthest\ pair\ of\ points.\r\n\ This\ quantity\ is\ also\ known\ as\ the\ <em>diameter</em>\ of\ the\ set\ of\ points.\r\n\r\n\ @return\ the\ Euclidean\ distance\ between\ the\ farthest\ pair\ of\ points\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.POSITIVE_INFINITY}\ if\ no\ such\ pair\ of\ points\r\n\ \ \ \ \ \ \ \ \ exist\ (because\ there\ are\ fewer\ than\ 2\ points)\r\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+comment5.text=\r\n\ Unit\ tests\ the\ {@code\ FarthestPair}\ data\ type.\r\n\ Reads\ in\ an\ integer\ {@code\ n}\ and\ {@code\ n}\ points\ (specified\ by\r\n\ their\ <em>x</em>-\ and\ <em>y</em>-coordinates)\ from\ standard\ input;\r\n\ computes\ a\ farthest\ pair\ of\ points;\ and\ prints\ the\ pair\ to\ standard\r\n\ output.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=6

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Job
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ JobImp\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=jobs
+comment1.target=Job(java.util.List)
+comment2.params=jobs\ n
+comment2.target=int\ findLastNonConflictingJob(java.util.List,\ int)
+comment3.params=
+comment3.target=int\ maxProfit()
+comment4.params=
+comment4.target=Bag\ bag()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

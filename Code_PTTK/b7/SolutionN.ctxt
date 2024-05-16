@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=SolutionN
+comment0.text=\r\n\ Store\ the\ n'th\ solution\ of\ N\ queen\ problems\r\n\r\n\ @Nguyen\ Van\ Giap\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=board
+comment1.target=SolutionN(int[][])
+comment2.params=
+comment2.target=int[][]\ getBoard()
+comment3.params=board
+comment3.target=void\ setBoard(int[][])
+comment4.params=
+comment4.target=void\ printBoard()
+numComments=5

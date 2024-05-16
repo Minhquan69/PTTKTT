@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=DijkstraSP
+comment0.text=\r\n\ \ The\ {@code\ DijkstraSP}\ class\ represents\ a\ data\ type\ for\ solving\ the\r\n\ \ single-source\ shortest\ paths\ problem\ in\ edge-weighted\ digraphs\r\n\ \ where\ the\ edge\ weights\ are\ nonnegative.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ Dijkstra's\ algorithm\ with\ a\ binary\ heap.\r\n\ \ The\ constructor\ takes\ time\ proportional\ to\ <em>E</em>\ log\ <em>V</em>,\r\n\ \ where\ <em>V</em>\ is\ the\ number\ of\ vertices\ and\ <em>E</em>\ is\ the\ number\ of\ edges.\r\n\ \ Afterwards,\ the\ {@code\ distTo()}\ and\ {@code\ hasPathTo()}\ methods\ take\r\n\ \ constant\ time\ and\ the\ {@code\ pathTo()}\ method\ takes\ time\ proportional\ to\ the\r\n\ \ number\ of\ edges\ in\ the\ shortest\ path\ returned.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ \ \ \ \r\n\ \ see\ <a\ href\="https\://algs4.cs.princeton.edu/44sp">Section\ 4.4</a>\ of\ \ \ \ \r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\ \r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=G\ s
+comment1.target=DijkstraSP(EdgeWeightedDigraph,\ int)
+comment1.text=\r\n\ Computes\ a\ shortest-paths\ tree\ from\ the\ source\ vertex\ {@code\ s}\ to\ every\ other\r\n\ vertex\ in\ the\ edge-weighted\ digraph\ {@code\ G}.\r\n\r\n\ @param\ \ G\ the\ edge-weighted\ digraph\r\n\ @param\ \ s\ the\ source\ vertex\r\n\ @throws\ IllegalArgumentException\ if\ an\ edge\ weight\ is\ negative\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ s\ <\ V}\r\n
+comment2.params=e
+comment2.target=void\ relax(DirectedEdge)
+comment3.params=v
+comment3.target=double\ distTo(int)
+comment3.text=\r\n\ Returns\ the\ length\ of\ a\ shortest\ path\ from\ the\ source\ vertex\ {@code\ s}\ to\ vertex\ {@code\ v}.\r\n\ @param\ \ v\ the\ destination\ vertex\r\n\ @return\ the\ length\ of\ a\ shortest\ path\ from\ the\ source\ vertex\ {@code\ s}\ to\ vertex\ {@code\ v};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.POSITIVE_INFINITY}\ if\ no\ such\ path\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment4.params=v
+comment4.target=boolean\ hasPathTo(int)
+comment4.text=\r\n\ Returns\ true\ if\ there\ is\ a\ path\ from\ the\ source\ vertex\ {@code\ s}\ to\ vertex\ {@code\ v}.\r\n\r\n\ @param\ \ v\ the\ destination\ vertex\r\n\ @return\ {@code\ true}\ if\ there\ is\ a\ path\ from\ the\ source\ vertex\r\n\ \ \ \ \ \ \ \ \ {@code\ s}\ to\ vertex\ {@code\ v};\ {@code\ false}\ otherwise\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment5.params=v
+comment5.target=java.lang.Iterable\ pathTo(int)
+comment5.text=\r\n\ Returns\ a\ shortest\ path\ from\ the\ source\ vertex\ {@code\ s}\ to\ vertex\ {@code\ v}.\r\n\r\n\ @param\ \ v\ the\ destination\ vertex\r\n\ @return\ a\ shortest\ path\ from\ the\ source\ vertex\ {@code\ s}\ to\ vertex\ {@code\ v}\r\n\ \ \ \ \ \ \ \ \ as\ an\ iterable\ of\ edges,\ and\ {@code\ null}\ if\ no\ such\ path\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ 0\ <\=\ v\ <\ V}\r\n
+comment6.params=G\ s
+comment6.target=boolean\ check(EdgeWeightedDigraph,\ int)
+comment7.params=v
+comment7.target=void\ validateVertex(int)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+comment8.text=\r\n\ Unit\ tests\ the\ {@code\ DijkstraSP}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=9

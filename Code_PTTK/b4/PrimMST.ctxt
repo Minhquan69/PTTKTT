@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=PrimMST
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PrimMST\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=G
+comment1.target=PrimMST(EdgeWeightedGraph)
+comment1.text=\r\n\ Compute\ a\ minimum\ spanning\ tree\ (or\ forest)\ of\ an\ edge-weighted\ graph.\r\n\ @param\ G\ the\ edge-weighted\ graph\r\n
+comment2.params=G\ s
+comment2.target=void\ prim(EdgeWeightedGraph,\ int)
+comment3.params=G\ v
+comment3.target=void\ scan(EdgeWeightedGraph,\ int)
+comment4.params=
+comment4.target=java.lang.Iterable\ edges()
+comment4.text=\r\n\ Returns\ the\ edges\ in\ a\ minimum\ spanning\ tree\ (or\ forest).\r\n\ @return\ the\ edges\ in\ a\ minimum\ spanning\ tree\ (or\ forest)\ as\r\n\ \ \ \ an\ iterable\ of\ edges\r\n
+comment5.params=
+comment5.target=double\ weight()
+comment5.text=\r\n\ Returns\ the\ sum\ of\ the\ edge\ weights\ in\ a\ minimum\ spanning\ tree\ (or\ forest).\r\n\ @return\ the\ sum\ of\ the\ edge\ weights\ in\ a\ minimum\ spanning\ tree\ (or\ forest)\r\n
+comment6.params=G
+comment6.target=boolean\ check(EdgeWeightedGraph)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+comment7.text=\r\n\ Unit\ tests\ the\ {@code\ PrimMST}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=8

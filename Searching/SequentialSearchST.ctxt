@@ -1,0 +1,32 @@
+#BlueJ class context
+comment0.target=SequentialSearchST
+comment0.text=\r\n\ \ The\ {@code\ SequentialSearchST}\ class\ represents\ an\ (unordered)\r\n\ \ symbol\ table\ of\ generic\ key-value\ pairs.\r\n\ \ It\ supports\ the\ usual\ <em>put</em>,\ <em>get</em>,\ <em>contains</em>,\r\n\ \ <em>delete</em>,\ <em>size</em>,\ and\ <em>is-empty</em>\ methods.\r\n\ \ It\ also\ provides\ a\ <em>keys</em>\ method\ for\ iterating\ over\ all\ of\ the\ keys.\r\n\ \ A\ symbol\ table\ implements\ the\ <em>associative\ array</em>\ abstraction\:\r\n\ \ when\ associating\ a\ value\ with\ a\ key\ that\ is\ already\ in\ the\ symbol\ table,\r\n\ \ the\ convention\ is\ to\ replace\ the\ old\ value\ with\ the\ new\ value.\r\n\ \ The\ class\ also\ uses\ the\ convention\ that\ values\ cannot\ be\ {@code\ null}.\ Setting\ the\r\n\ \ value\ associated\ with\ a\ key\ to\ {@code\ null}\ is\ equivalent\ to\ deleting\ the\ key\r\n\ \ from\ the\ symbol\ table.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ a\ singly-linked\ list\ and\ sequential\ search.\r\n\ \ It\ relies\ on\ the\ {@code\ equals()}\ method\ to\ test\ whether\ two\ keys\r\n\ \ are\ equal.\ It\ does\ not\ call\ either\ the\ {@code\ compareTo()}\ or\r\n\ \ {@code\ hashCode()}\ method.\ \r\n\ \ The\ <em>put</em>\ and\ <em>delete</em>\ operations\ take\ linear\ time;\ the\r\n\ \ <em>get</em>\ and\ <em>contains</em>\ operations\ takes\ linear\ time\ in\ the\ worst\ case.\r\n\ \ The\ <em>size</em>,\ and\ <em>is-empty</em>\ operations\ take\ constant\ time.\r\n\ \ Construction\ takes\ constant\ time.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/31elementary">Section\ 3.1</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=SequentialSearchST()
+comment1.text=\r\n\ Initializes\ an\ empty\ symbol\ table.\r\n
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=int\ size()
+comment2.text=\r\n\ Returns\ the\ number\ of\ key-value\ pairs\ in\ this\ symbol\ table.\r\n\r\n\ @return\ the\ number\ of\ key-value\ pairs\ in\ this\ symbol\ table\r\n
+comment3.params=
+comment3.target=boolean\ isEmpty()
+comment3.text=\r\n\ Returns\ true\ if\ this\ symbol\ table\ is\ empty.\r\n\r\n\ @return\ {@code\ true}\ if\ this\ symbol\ table\ is\ empty;\r\n\ \ \ \ \ \ \ \ \ {@code\ false}\ otherwise\r\n
+comment4.params=key
+comment4.target=boolean\ contains(java.lang.Object)
+comment4.text=\r\n\ Returns\ true\ if\ this\ symbol\ table\ contains\ the\ specified\ key.\r\n\r\n\ @param\ \ key\ the\ key\r\n\ @return\ {@code\ true}\ if\ this\ symbol\ table\ contains\ {@code\ key};\r\n\ \ \ \ \ \ \ \ \ {@code\ false}\ otherwise\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key}\ is\ {@code\ null}\r\n
+comment5.params=key
+comment5.target=java.lang.Object\ get(java.lang.Object)
+comment5.text=\r\n\ Returns\ the\ value\ associated\ with\ the\ given\ key\ in\ this\ symbol\ table.\r\n\r\n\ @param\ \ key\ the\ key\r\n\ @return\ the\ value\ associated\ with\ the\ given\ key\ if\ the\ key\ is\ in\ the\ symbol\ table\r\n\ \ \ \ \ and\ {@code\ null}\ if\ the\ key\ is\ not\ in\ the\ symbol\ table\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key}\ is\ {@code\ null}\r\n
+comment6.params=key\ val
+comment6.target=void\ put(java.lang.Object,\ java.lang.Object)
+comment6.text=\r\n\ Inserts\ the\ specified\ key-value\ pair\ into\ the\ symbol\ table,\ overwriting\ the\ old\ \r\n\ value\ with\ the\ new\ value\ if\ the\ symbol\ table\ already\ contains\ the\ specified\ key.\r\n\ Deletes\ the\ specified\ key\ (and\ its\ associated\ value)\ from\ this\ symbol\ table\r\n\ if\ the\ specified\ value\ is\ {@code\ null}.\r\n\r\n\ @param\ \ key\ the\ key\r\n\ @param\ \ val\ the\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key}\ is\ {@code\ null}\r\n
+comment7.params=key
+comment7.target=void\ delete(java.lang.Object)
+comment7.text=\r\n\ Removes\ the\ specified\ key\ and\ its\ associated\ value\ from\ this\ symbol\ table\ \ \ \ \ \r\n\ (if\ the\ key\ is\ in\ this\ symbol\ table).\ \ \ \ \r\n\r\n\ @param\ \ key\ the\ key\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key}\ is\ {@code\ null}\r\n
+comment8.params=x\ key
+comment8.target=SequentialSearchST.Node\ delete(SequentialSearchST.Node,\ java.lang.Object)
+comment9.params=
+comment9.target=java.lang.Iterable\ keys()
+comment9.text=\r\n\ Returns\ all\ keys\ in\ the\ symbol\ table\ as\ an\ {@code\ Iterable}.\r\n\ To\ iterate\ over\ all\ of\ the\ keys\ in\ the\ symbol\ table\ named\ {@code\ st},\r\n\ use\ the\ foreach\ notation\:\ {@code\ for\ (Key\ key\ \:\ st.keys())}.\r\n\r\n\ @return\ all\ keys\ in\ the\ symbol\ table\r\n
+numComments=11

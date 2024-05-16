@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=LookupIndex
+comment0.text=\r\n\ \ The\ {@code\ LookupIndex}\ class\ provides\ a\ data-driven\ client\ for\ reading\ in\ a\r\n\ \ key-value\ pairs\ from\ a\ file;\ then,\ printing\ the\ values\ corresponding\ to\ the\r\n\ \ keys\ found\ on\ standard\ input.\ Keys\ are\ strings;\ values\ are\ lists\ of\ strings.\r\n\ \ The\ separating\ delimiter\ is\ taken\ as\ a\ command-line\ argument.\ This\ client\r\n\ \ is\ sometimes\ known\ as\ an\ <em>inverted\ index</em>.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/35applications">Section\ 3.5</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\ \ \r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=LookupIndex()
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

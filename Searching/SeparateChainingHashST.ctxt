@@ -1,0 +1,37 @@
+#BlueJ class context
+comment0.target=SeparateChainingHashST
+comment0.text=\r\n\ \ The\ {@code\ SeparateChainingHashST}\ class\ represents\ a\ symbol\ table\ of\ generic\r\n\ \ key-value\ pairs.\r\n\ \ It\ supports\ the\ usual\ <em>put</em>,\ <em>get</em>,\ <em>contains</em>,\r\n\ \ <em>delete</em>,\ <em>size</em>,\ and\ <em>is-empty</em>\ methods.\r\n\ \ It\ also\ provides\ a\ <em>keys</em>\ method\ for\ iterating\ over\ all\ of\ the\ keys.\r\n\ \ A\ symbol\ table\ implements\ the\ <em>associative\ array</em>\ abstraction\:\r\n\ \ when\ associating\ a\ value\ with\ a\ key\ that\ is\ already\ in\ the\ symbol\ table,\r\n\ \ the\ convention\ is\ to\ replace\ the\ old\ value\ with\ the\ new\ value.\r\n\ \ Unlike\ {@link\ java.util.Map},\ this\ class\ uses\ the\ convention\ that\r\n\ \ values\ cannot\ be\ {@code\ null}\u2014setting\ the\r\n\ \ value\ associated\ with\ a\ key\ to\ {@code\ null}\ is\ equivalent\ to\ deleting\ the\ key\r\n\ \ from\ the\ symbol\ table.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ a\ separate\ chaining\ hash\ table.\ It\ requires\ that\r\n\ \ the\ key\ type\ overrides\ the\ {@code\ equals()}\ and\ {@code\ hashCode()}\ methods.\r\n\ \ The\ expected\ time\ per\ <em>put</em>,\ <em>contains</em>,\ or\ <em>remove</em>\r\n\ \ operation\ is\ constant,\ subject\ to\ the\ uniform\ hashing\ assumption.\r\n\ \ The\ <em>size</em>,\ and\ <em>is-empty</em>\ operations\ take\ constant\ time.\r\n\ \ Construction\ takes\ constant\ time.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/34hash">Section\ 3.4</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\ \ For\ other\ implementations,\ see\ {@link\ ST},\ {@link\ BinarySearchST},\r\n\ \ {@link\ SequentialSearchST},\ {@link\ BST},\ {@link\ RedBlackBST},\ and\r\n\ \ {@link\ LinearProbingHashST},\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=SeparateChainingHashST()
+comment1.text=\r\n\ Initializes\ an\ empty\ symbol\ table.\r\n
+comment10.params=key
+comment10.target=void\ delete(java.lang.Object)
+comment10.text=\r\n\ Removes\ the\ specified\ key\ and\ its\ associated\ value\ from\ this\ symbol\ table\ \ \ \ \ \r\n\ (if\ the\ key\ is\ in\ this\ symbol\ table).\ \ \ \ \r\n\r\n\ @param\ \ key\ the\ key\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key}\ is\ {@code\ null}\r\n
+comment11.params=
+comment11.target=java.lang.Iterable\ keys()
+comment12.params=args
+comment12.target=void\ main(java.lang.String[])
+comment12.text=\r\n\ Unit\ tests\ the\ {@code\ SeparateChainingHashST}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+comment2.params=m
+comment2.target=SeparateChainingHashST(int)
+comment2.text=\r\n\ Initializes\ an\ empty\ symbol\ table\ with\ {@code\ m}\ chains.\r\n\ @param\ m\ the\ initial\ number\ of\ chains\r\n
+comment3.params=chains
+comment3.target=void\ resize(int)
+comment4.params=key
+comment4.target=int\ hash(java.lang.Object)
+comment5.params=
+comment5.target=int\ size()
+comment5.text=\r\n\ Returns\ the\ number\ of\ key-value\ pairs\ in\ this\ symbol\ table.\r\n\r\n\ @return\ the\ number\ of\ key-value\ pairs\ in\ this\ symbol\ table\r\n
+comment6.params=
+comment6.target=boolean\ isEmpty()
+comment6.text=\r\n\ Returns\ true\ if\ this\ symbol\ table\ is\ empty.\r\n\r\n\ @return\ {@code\ true}\ if\ this\ symbol\ table\ is\ empty;\r\n\ \ \ \ \ \ \ \ \ {@code\ false}\ otherwise\r\n
+comment7.params=key
+comment7.target=boolean\ contains(java.lang.Object)
+comment7.text=\r\n\ Returns\ true\ if\ this\ symbol\ table\ contains\ the\ specified\ key.\r\n\r\n\ @param\ \ key\ the\ key\r\n\ @return\ {@code\ true}\ if\ this\ symbol\ table\ contains\ {@code\ key};\r\n\ \ \ \ \ \ \ \ \ {@code\ false}\ otherwise\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key}\ is\ {@code\ null}\r\n
+comment8.params=key
+comment8.target=java.lang.Object\ get(java.lang.Object)
+comment8.text=\r\n\ Returns\ the\ value\ associated\ with\ the\ specified\ key\ in\ this\ symbol\ table.\r\n\r\n\ @param\ \ key\ the\ key\r\n\ @return\ the\ value\ associated\ with\ {@code\ key}\ in\ the\ symbol\ table;\r\n\ \ \ \ \ \ \ \ \ {@code\ null}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key}\ is\ {@code\ null}\r\n
+comment9.params=key\ val
+comment9.target=void\ put(java.lang.Object,\ java.lang.Object)
+comment9.text=\r\n\ Inserts\ the\ specified\ key-value\ pair\ into\ the\ symbol\ table,\ overwriting\ the\ old\ \r\n\ value\ with\ the\ new\ value\ if\ the\ symbol\ table\ already\ contains\ the\ specified\ key.\r\n\ Deletes\ the\ specified\ key\ (and\ its\ associated\ value)\ from\ this\ symbol\ table\r\n\ if\ the\ specified\ value\ is\ {@code\ null}.\r\n\r\n\ @param\ \ key\ the\ key\r\n\ @param\ \ val\ the\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ key}\ is\ {@code\ null}\r\n
+numComments=13

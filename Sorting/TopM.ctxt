@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=TopM
+comment0.text=\r\n\ \ The\ {@code\ TopM}\ class\ provides\ a\ client\ that\ reads\ a\ sequence\ of\r\n\ \ transactions\ from\ standard\ input\ and\ prints\ the\ <em>m</em>\ largest\ ones\r\n\ \ to\ standard\ output.\ This\ implementation\ uses\ a\ {@link\ MinPQ}\ of\ size\r\n\ \ at\ most\ <em>m</em>\ +\ 1\ to\ identify\ the\ <em>M</em>\ largest\ transactions\r\n\ \ and\ a\ {@link\ Stack}\ to\ output\ them\ in\ the\ proper\ order.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/24pq">Section\ 2.4</a>\r\n\ \ of\ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=TopM()
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=\r\n\ \ Reads\ a\ sequence\ of\ transactions\ from\ standard\ input;\ takes\ a\r\n\ \ command-line\ integer\ m;\ prints\ to\ standard\ output\ the\ m\ largest\r\n\ \ transactions\ in\ descending\ order.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=3

@@ -1,0 +1,5 @@
+1    Do Xuan         Trang    26/02/2003    9.8    Ha Noi        0934
+2    Nguyen Thanh    Dat      01/01/2004    10     Ha Noi        2222
+3    Ta Quoc         Viet     02/03/2006    9.2    Thai Binh     3333
+4    Nguyen Trung    Dung     04/04/2005    9.2    Bac Ninh      4444
+5    Bui Duc         Anh      07/09/2008    8.4    Anh Quoc      5555

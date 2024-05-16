@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Bag
+comment0.text=\r\n\ \ The\ {@code\ Bag}\ class\ represents\ a\ bag\ (or\ multiset)\ of\ \r\n\ \ generic\ items.\ It\ supports\ insertion\ and\ iterating\ over\ the\ \r\n\ \ items\ in\ arbitrary\ order.\r\n\ \ <p>\r\n\ \ This\ implementation\ uses\ a\ singly\ linked\ list\ with\ a\ static\ nested\ class\ Node.\r\n\ \ See\ {@link\ LinkedBag}\ for\ the\ version\ from\ the\r\n\ \ textbook\ that\ uses\ a\ non-static\ nested\ class.\r\n\ \ See\ {@link\ ResizingArrayBag}\ for\ a\ version\ that\ uses\ a\ resizing\ array.\r\n\ \ The\ <em>add</em>,\ <em>isEmpty</em>,\ and\ <em>size</em>\ operations\r\n\ \ take\ constant\ time.\ Iteration\ takes\ time\ proportional\ to\ the\ number\ of\ items.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\ <a\ href\="https\://algs4.cs.princeton.edu/13stacks">Section\ 1.3</a>\ of\r\n\ \ <i>Algorithms,\ 4th\ Edition</i>\ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n\r\n\ \ @param\ <Item>\ the\ generic\ type\ of\ an\ item\ in\ this\ bag\r\n
+comment1.params=
+comment1.target=Bag()
+comment1.text=\r\n\ Initializes\ an\ empty\ bag.\r\n
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment2.text=\r\n\ Returns\ true\ if\ this\ bag\ is\ empty.\r\n\r\n\ @return\ {@code\ true}\ if\ this\ bag\ is\ empty;\r\n\ \ \ \ \ \ \ \ \ {@code\ false}\ otherwise\r\n
+comment3.params=
+comment3.target=int\ size()
+comment3.text=\r\n\ Returns\ the\ number\ of\ items\ in\ this\ bag.\r\n\r\n\ @return\ the\ number\ of\ items\ in\ this\ bag\r\n
+comment4.params=item
+comment4.target=void\ add(java.lang.Object)
+comment4.text=\r\n\ Adds\ the\ item\ to\ this\ bag.\r\n\r\n\ @param\ \ item\ the\ item\ to\ add\ to\ this\ bag\r\n
+comment5.params=
+comment5.target=java.util.Iterator\ iterator()
+comment5.text=\r\n\ Returns\ an\ iterator\ that\ iterates\ over\ the\ items\ in\ this\ bag\ in\ arbitrary\ order.\r\n\r\n\ @return\ an\ iterator\ that\ iterates\ over\ the\ items\ in\ this\ bag\ in\ arbitrary\ order\r\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment6.text=\r\n\ Unit\ tests\ the\ {@code\ Bag}\ data\ type.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+numComments=7

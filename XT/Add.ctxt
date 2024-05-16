@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Add
+comment1.params=leftExpression\ rightExpression
+comment1.target=Add(Expression,\ Expression)
+comment2.params=
+comment2.target=double\ interpret()
+numComments=3

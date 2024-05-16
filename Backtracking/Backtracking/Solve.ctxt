@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Solve
+comment1.params=board
+comment1.target=void\ printSolution(int[][])
+comment2.params=board\ row\ col
+comment2.target=boolean\ isSafe(int[][],\ int,\ int)
+comment3.params=board\ col
+comment3.target=boolean\ solveNQUtil(int[][],\ int)
+comment4.params=
+comment4.target=void\ solveNQ()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

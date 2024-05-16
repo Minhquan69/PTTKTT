@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=AllSolNQueen
+comment0.text=\ Java\ program\ to\ solve\ N\ Queen\ \ \ \r\nProblem\ using\ backtracking
+comment1.params=board
+comment1.target=void\ printSolution(int[][])
+comment1.text=A\ utility\ function\ to\ print\ solution
+comment2.params=board\ row\ col
+comment2.target=boolean\ isSafe(int[][],\ int,\ int)
+comment2.text=\ A\ utility\ function\ to\ check\ if\ a\ queen\ can\ \ \r\nbe\ placed\ on\ board[row][col].\ Note\ that\ this\ \ \r\nfunction\ is\ called\ when\ "col"\ queens\ are\ \ \r\nalready\ placed\ in\ columns\ from\ 0\ to\ col\ -1.\ \ \r\nSo\ we\ need\ to\ check\ only\ left\ side\ for\ \ \r\nattacking\ queens
+comment3.params=board\ col
+comment3.target=boolean\ solveNQUtil(int[][],\ int)
+comment3.text=\ A\ recursive\ utility\ function\ \ \ \r\nto\ solve\ N\ Queen\ problem
+comment4.params=
+comment4.target=void\ solveNQ()
+comment4.text=\ This\ function\ solves\ the\ N\ Queen\ problem\ using\ \ \r\nBacktracking.\ It\ mainly\ uses\ solveNQUtil()\ to\ \ \r\nsolve\ the\ problem.\ It\ returns\ false\ if\ queens\ \ \r\ncannot\ be\ placed,\ otherwise\ return\ true\ and\ \ \r\nprints\ placement\ of\ queens\ in\ the\ form\ of\ 1s.\ \ \r\nPlease\ note\ that\ there\ may\ be\ more\ than\ one\ \ \r\nsolutions,\ this\ function\ prints\ one\ of\ the\ \ \r\nfeasible\ solutions.
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

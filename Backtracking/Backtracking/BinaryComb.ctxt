@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=BinaryComb
+comment1.params=set\ k
+comment1.target=void\ printAllKLength(char[],\ int)
+comment2.params=set\ prefix\ n\ k
+comment2.target=void\ printAllKLengthRec(char[],\ java.lang.String,\ int,\ int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
